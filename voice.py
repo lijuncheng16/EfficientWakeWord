@@ -58,8 +58,7 @@ def getModel(filename):
     model = models.create_model(model_name=modelName, num_classes=2, in_channels=1)
     return stateDict, model, modelName
 
-#Manually define the path to the model
-filename = "checkpoints/sheila/efficientnet_b7/best-f1-model-sheila.pth"
+filename = "path to the model"
 stateDict, model, modelName = getModel(filename)
 
 #If the model was saved as a stateDict, load it. Otherwise, load its checkpoint file
